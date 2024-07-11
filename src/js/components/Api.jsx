@@ -153,7 +153,7 @@ function ApiHandlerExample(props) {
 		buff += " -H 'o-node: " + node.node + "'"
 	}
 	if (data.stream) {
-		buff += " -N -H 'Content-Type: text/event-stream'"
+		buff += " -N -H 'Accept: text/event-stream'"
 	} else {
 		buff += " -H 'Content-Type: application/json'"
 	}
